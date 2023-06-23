@@ -5,4 +5,67 @@ site_name: ChthuluGraph Website
 theme:
   name: material
 
+nav:
+    - Home: index.md
+  
+
+site_author: Maddalena Ghiotto & Giusy Grieco
+site_description: Documentation of ChthuluGraph project
+
+repo_name: ChthuluGraph - official Documentation
+repo_url: www,linkalluri.it
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.sections
+    - navigation.instant
+    - navigation.tracking
+    - navigation.expand
+    - navigation.path
+    - navigation.prune
+    - navigation.indexes
+    - navigation.footer
+    - toc.integrate
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - content.tooltips
+    
+  language: en
+  
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: indigo
+      accent: pink
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: amber
+      accent: deep purple
+
+
+
+plugins:
+  - search
+
+
+
+
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://fosstodon.org/@squidfun
+
 
