@@ -13,7 +13,7 @@ site_author: Maddalena Ghiotto & Giusy Grieco
 site_description: Documentation of ChthuluGraph project
 
 repo_name: ChthuluGraph - official Documentation
-repo_url: www.linkalluri.it
+repo_url: https://github.com/Explorers-in-the-Chthulucene/SemioticDrifting
 
 theme:
   name: material
