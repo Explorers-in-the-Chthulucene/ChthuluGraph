@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ChthuluGraph</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link href="plugins/bootstrap-5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+	<!-- script
+	================================================== -->
+	<script src="js/modernizr.js"></script>
+
+</head>
+<body data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
+
+<div id="overlayer">
+	<span class="loader">
+	  <div class="dot dot-1"></div>
+	  <div class="dot dot-2"></div>
+	  <div class="dot dot-3"></div>
+	</span>
+</div>
+
+<header class="site-header position-fixed py-1 text-white">
+  	<nav id="header-nav" class="navbar navbar-expand-lg px-3 mb-3">
+	
+		<div class="container-fluid">
+		  
+		  <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo"/></a>
+
+		  <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation"><ion-icon name="menu-outline"></ion-icon></button>
+		  
+		  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+		    <div class="offcanvas-header">
+		      <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+		      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		    </div>
+		    <div class="offcanvas-body">
+			  <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3">
+			    <li class="nav-item">
+			      <a class="nav-link me-4" href="about.html">About</a>
+			    </li>
+			    <li class="nav-item">
+			      <a class="nav-link me-4" href="#events">Events</a>
+			    </li>
+			    <li class="nav-item">
+			      <a class="nav-link me-4" href="#latest-stories">Stories</a>
+			    </li>
+			    <li class="nav-item dropdown">
+			      <a class="nav-link me-4 dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Pages</a>
+			      <ul class="dropdown-menu dropdown-menu-dark">
+			        <li><a href="about.html" class="dropdown-item" href="#scrollspyHeading3">About</a></li>
+			        <li><a href="contact.html" class="dropdown-item" href="#scrollspyHeading5">Contact</a></li>
+			        <li><a href="single-post.html" class="dropdown-item" href="#scrollspyHeading5">Single</a></li>
+			        <li><a href="styles.html" class="dropdown-item" href="#scrollspyHeading5">Styles</a></li>
+			      </ul>
+			    </li>
+			    <li class="nav-item">
+			      <a class="btn btn-primary btn-lg rounded-pill" href="index.html">Home</a>
+			    </li>
+			  </ul>
+			 </div>
+		  </div>
+
+	  	</div>
+
+	</nav>
+</header>
+
+<section id="intro" class="padding-large jarallax">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+				<div class="section-title my-5">
+					<h2 style="text-shadow: 0 0 10px #FF0000;" class="text-white display-2">Chthulu<em>Graph</em></h2>
+				</div>
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card card-dark" data-aos="fade-up" data-aos-delay="0">
+					<div class="card-body">
+						<h3>A Knowledge Representation Heuristic Method</h3>
+						<p><p>Taking inspiration from the paper "Take Five", we came across a semantic role labelling method [...]</p>
+						<a href="about.html">Continue reading</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card card-dark" data-aos="fade-up" data-aos-delay="300">
+					<div class="card-body">
+						<h3>Script materials available</h3>
+						<p>Are you struggling with semantic role labelling? This shall become a great occasion to understand more about the potentialities of knowledge representation and organization.</p>
+						<a href="#">Download here.</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card card-dark" data-aos="fade-up" data-aos-delay="600">
+					<div class="card-body">
+						<h3>Donna Haraway legacy</h3>
+						<p>What is this project about? Donna Haraway's <i>Staying with the Trouble</i>, is a book that represents a milestone when it comes to questioning human-nature relationship, together with nature/culture division [...]</a>
+						<a href="/stayWithTheTrouble.html">Continue reading.</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<img src="images/banner.jpg" class="jarallax-img">
+</section>
+
+
+<section class="padding-large">
+	<div class="container">
+		<div class="row mb-3">
+
+			<div class="col-md-6">
+
+				<h3 style="color:indigo">THE PROJECT FOR HARAWAY'S LEGACY</h3>
+
+				<p>Without aiming at taming the anti-categorical nature of Haraway's thought, we thought useful and interesting to create an Ontology to try and organize the content of Staying with the trouble with the twofold aim, on the one hand, of making the stories and the thoughts contained in these pages more navigable for people, on the other hand of enhancing the reach of Haraway's connections and thought-travels by linking entities such as, people, places, events and so on, with other existing knowledge on the web. As Haraway would put it, this ontology aims at playing string figures and entangle different sources of knowledge on the web to create a resource where users can exploit digital tools to learn and play around while <a href="about.html">staying with the trouble</a>.</p>
+
+			</div>
+
+			<div class="col-md-6">
+
+				<h3 style="color:indigo">STAYING WITH THE TROUBLE</h3>
+
+				<p>Donna Haraway's <i>Staying with the Trouble</i>, is a book that represents a milestone when it comes to questioning human-nature relationship, together with nature/culture division [...] where urgent challenges of our times, such as climate change, mass extinctions and human-nature relationship, together with nature/culture kantian division is questioned in favour of a feminist, ecological discourse. Donna Haraway's legacy is striclty entangled with that of Bruno Latour<a href="about.html"> [continue reading here].</a>
+					</p>
+</section>
+		<div class="row mb-5">
+			<div class="col-md-6">
+				<blockquote class="blockquote">
+					<p>Neither the critters nor the people could have existed or could endure without each other in ongoing, <b>curious practices</b>. Attached to ongoing pasts, they bring each other forward in thick presents and still possible futures; <b>they stay with the trouble in speculative fabulation</b>.</p>
+					<cite class="mb-5">Donna Haraway, Staying with the Trouble, chap. 7</cite>
+				</blockquote>
+			</div>
+			<div class="col-md-6" style="background: url('images/veronika-jorjobert-27w3ULIIJfI-unsplash.jpg');background-size: cover;">
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="padding-large">
+	<div class="container">
+		
+		<div class="row mb-3">
+
+			<div class="col-md-4">
+
+				<h4 style="color:indigo":>[WHAT] Semantic Role Labelling</h4>
+
+				<p>Taking inspiration from this paper [...] we studied how tools can be used, together with heuristic methods, to produce content for an ontology that questions the general role ontology modelling, in favour of a more concrete alignment between tools, therefore providing interoperability and leading to a F.A.I.R. use of the technology.
+					</p>
+
+			</div>
+
+			<div class="col-md-4">
+
+				<h4 style="color:indigo">[HOW] Annotated sentences</h4>
+
+				<p>To evaluate semantic role labeling (SRL), you would typically need a labeled dataset consisting of annotated sentences. Each annotated sentence in the dataset should include the following information: <br>
+
+
+					<b>1. Sentence</b>: The original sentence or text where the SRL annotations will be applied. <br>
+					<b>2. Predicate</b>: The word or phrase that expresses the action or state in the sentence. <br>
+					<b>3. Arguments</b>: The words or phrases that play specific roles with respect to the predicate. These roles can include agent, patient, theme, experiencer, location, time, and many others depending on the specific SRL framework being used. <br>
+					<b>4. Labels</b>: Each argument is assigned a specific label indicating its semantic role in relation to the predicate. For example, an argument labeled as "agent" denotes the entity or actor performing the action.</p>
+
+			</div>
+
+			<div class="col-md-4">
+
+				<h4 style="color:indigo">[FURTHER DEVELOPMENTS]</h4>
+
+				<p>Our intent was to use both manually annotated dataset to see the performance of our software and booknlp way of working. This would have brought us evaluating the performance of a SRL-system-of-tools, using varoius metrics, such as precision, recall and F1 score.
+					We leave that "for future generation". In this project indeed, you will still find mixed methods, but with an initial approach to NLP text mining and labelling.
+					</p>
+
+			</div>
+		</div>
+</section>
+
+<section class="my-3">
+	<div class="container">
+		
+		<div class="row">
+			<div class="col">
+				<h2 class="section-title text-center mb-5" style="color:blue">¯\_(ツ)_/¯ Chthulu Database ¯\_(ツ)_/¯</h2>
+				<p>Our expected outcome to populate the Chthulu Ontology is the target identification and <b>linguistic output obtained from the chap 7 of “Stay with the Trouble”</b>. 
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col">
+
+				<div class="accordion mb-5" id="accordionExample">
+				  <div class="accordion-item">
+				    <h2 class="accordion-header" id="headingOne">
+				      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				        #1: vocabulary completion
+				      </button>
+				    </h2>
+				    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+				      <div class="accordion-body">
+				        <strong style="color:grey">To build our #chthuluontology, we identified concepts and frames, according to the unique storytelling of Donna Haraway. <br> <code> framesLU = </code> <br> <code> {"Collaborative_thinking" : ["thinks-with", "attunement"], 
+							"Perception_active" : ["listened"], 
+							"Coming_to_believe" : ["learned"], 
+							"Studying" : ["studies"], 
+							"Coming_up_with" : ["theorizes", "theory", "proposes"], 
+							"Mental_stimulus_stimulus_focus" : ["interested in"], 
+							"Cause_expansion" : ["enlarges", "dilates", "expands", "adds"], 
+							"Being_in_category" : ["practice"], 
+							"People_by_vocation" : ["who", "scientist"], 
+							"Needing" : ["needy"]} </code> <br> <code>
+				conceptsLU = </code> <br> <code>{"ThinkWith": ["thinks-with", "kind of thinking", "built together"], 
+							  "GoVisit": ["going visiting"], "RenderCapable" :["render each other capable"], 
+							  "Worlding" : ["worlding"], 
+							  "Ongoingness" : ["yet to come"]}</code></div>
+				    </div>
+				  </div>
+				  <div class="accordion-item">
+				    <h2 class="accordion-header" id="headingTwo">
+				      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				        #2: BookNLP output
+				      </button>
+				    </h2>
+				    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+				      <div class="accordion-body">
+				        <strong> <a href="https://github.com/dbamman/book-nlp">BookNLP</a> delivers a set of outputs. Below you can find the .entities file; as you will notice, some entities are not correct. Furthermore, the recall for the entire book becomes incrementally accurated when it comes to terms such as "situated", a very important expression in Haraway's whole production.
+							<script src="https://gist.github.com/teragramgius/700eff419280cc07fa5f203da62a1853.js"></script>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="accordion-item">
+				    <h2 class="accordion-header" id="headingThree">
+				      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				        #3: .json automation
+				      </button>
+				    </h2>
+				    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+				      <div class="accordion-body">
+				        <strong>A file .json is obtained after a csv file completion about part of speech and their frames.
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+			</div>	
+		</div>
+	</div>
+</section>
+
+
+
+<section id="mission" class="padding-large no-padding-top">
+	<div class="container">
+		<div class="row mt-5">
+			<div class="col-md-3">
+				<div class="chart-box d-flex flex-wrap text-start" data-aos="fade-zoom-in" data-aos-delay="0">
+					<div class="chart" style="max-width: 180px;margin-bottom: 30px;">
+						<canvas id="orphans" width="180" height="180"></canvas>
+					</div>
+					<div>
+						<h3>Orphans</h3>
+						<p>An estimated 153 million children worldwide are orphans (UNICEF)</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="chart-box d-flex flex-wrap text-start" data-aos="fade-zoom-in" data-aos-delay="300">
+					<div class="chart" style="max-width: 180px;margin-bottom: 30px;">
+						<canvas id="labor" width="180" height="180"></canvas>
+					</div>
+					<div>
+						<h3>Child Labor</h3>
+						<p>Worldwide, there are 168 million child laborers, accounting for almost 11% of children (ILO)</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="chart-box d-flex flex-wrap text-start" data-aos="fade-zoom-in" data-aos-delay="600">
+					<div class="chart" style="max-width: 180px;margin-bottom: 30px;">
+						<canvas id="education" width="180" height="180"></canvas>
+					</div>
+					<div>
+						<h3>Education </h3>
+						<p>263 million children and youth let out of school (UNESCO)</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="chart-box d-flex flex-wrap text-start" data-aos="fade-zoom-in" data-aos-delay="900">
+					<div class="chart" style="max-width: 180px;margin-bottom: 30px;">
+						<canvas id="health" width="180" height="180"></canvas>
+					</div>
+					<div>
+						<h3>Health</h3>
+						<p>In 2017, 75% of malnourished children lived in less developed regions (WHO)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="mission" class="bg-grey padding-large">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<header class="text-center my-5">
+					<span class="text-muted">know more</span>
+					<h2><strong>About Donna Haraway Legacy</strong></h2>
+				</header>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4" data-aos="fade-zoom-in" data-aos-delay="300">
+				<h3>VOCABULARY</h3>
+				<p>Lacus vitae mauris morbi molestie vulputate lorem semper. Metus sollicitudin urna orci sapien mattis netus lacus.</p>
+				<a href="#" class="btn-link">Read more</a>
+			</div>
+			<div class="col-md-4" data-aos="fade-zoom-in" data-aos-delay="600">
+				<h3>TAXONOMY</h3>
+				<p>apien mattis netus lacus.</p>
+				<a href="#" class="btn-link">Read more</a>
+			</div>
+			<div class="col-md-4" data-aos="fade-zoom-in" data-aos-delay="900">
+				<h3>CONCEPTS</h3>
+				<p>Worlding - </p>
+				<a href="#" class="btn-link">Read more</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="events" class="padding-large">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<header class="text-center my-5">
+					<span class="text-muted">[HOW?]</span>
+					<h2><strong>The process</strong></h2>
+				</header>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-md-8">
+				<ol class="list-group list-group-flush" data-aos="fade-zoom-in">
+				  <li class="list-group-item d-flex justify-content-between align-items-start py-4">
+				    <div class="ms-2 me-5 text-uppercase">
+				    	<span style="color:blue">1.</span>
+				    </div>
+				    <div class="ms-2 me-auto">
+				      <div class="fw-bold" style="color:blue">Knowledge Extraction</div>
+				    </div>
+				    <a href="#" class="btn btn-primary rounded-pill">KE</a>
+				  </li>
+				  <li class="list-group-item d-flex justify-content-between align-items-start py-4">
+				    <div class="ms-2 me-5 text-uppercase">
+				    	<span style="color:blue">2.</span>
+				    </div>
+				    <div class="ms-2 me-auto">
+				      <div class="fw-bold" style="color:blue">Knowledge Representation</div>
+				      <span class="text-muted">Conceptual Modelling</span>
+				    </div>
+				    <a href="#" class="btn btn-primary rounded-pill">KR</a>
+				  </li>
+				  <li class="list-group-item d-flex justify-content-between align-items-start py-4">
+				    <div class="ms-2 me-5 text-uppercase">
+				    	<span style="color:blue">3.</span>
+				    </div>
+				    <div class="ms-2 me-auto">
+				      <div class="fw-bold"  style="color:blue">Ontology Development</div>
+				      <span class="text-muted">WIDOCO Documentation</span>
+				    </div>
+				    <a href="#" class="btn btn-primary rounded-pill">Viz</a>
+				  </li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="donate" class="cta jarallax padding-large text-white">
+ 	<div class="container">
+ 		<div class="row justify-content-center">
+ 			
+	 		<div class="section-title justify-content-between col-md-5 mt-5">
+	 			<header>
+		 			<h2><strong>Suggest us something</strong></h2>
+		 			<p class="text-white">This work is open to further developments, feel free to share your thoughts!</p>
+	 			</header>
+	 			<button class="btn btn-primary btn-lg rounded-pill">Contact Us</button>
+	 		</div>
+
+ 		</div>
+ 	</div>
+ 	<img src="images/banner.jpg" class="jarallax-img" />
+</section>
+
+<footer class="padding-large text-white bg-dark">
+	<div class="container">
+	    <div class="row">
+	    	
+	    	<div class="col-12 col-md-6">
+		        <img src="images/logo-color.png">
+		        <p>
+		        	<a href="mailto:giusy.grieco.info@gmail.com">giusy.grieco.info@gmail.com</a><br>
+		        	<a href="mailto:maddalena.ghiotto@studio.unibo.it">maddalena.ghiotto@gmail.com</a><br>
+		        	Via Zamboni 14, Bologna, ITALY.<br>
+		        </p>
+		        <ul class="justify-content-start list-unstyled d-flex">
+		        	<li><a href="#" class="nav-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+		        	<li><a href="#" class="nav-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+		        	<li><a href="#" class="nav-link"><ion-icon name="logo-skype"></ion-icon></a></li>
+		        	<li><a href="#" class="nav-link"><ion-icon name="logo-pinterest"></ion-icon></a></li>
+		        	<li><a href="#" class="nav-link"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+		        </ul>
+		    </div>
+
+		    <div class="col-4 col-md-2">
+		        <ul class="nav flex-column">
+		          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
+		          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Scripts</a></li>
+		          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">The Team</a></li>
+		          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a></li>
+		        </ul>
+		    </div>
+
+	      
+	    </div>
+
+	    <div class="d-flex justify-content-between flex-wrap py-4 my-4 border-top">
+	      <p>This project is born for the Knowledge Representation and Extraction exam at University of Alma Mater Studiorum in Bologna.</p>
+	      <p>Credits to <a href="https://templatesjungle.com/" class="link-primary" target="_blank">TemplatesJungle</a> for parts of this template.</p>
+	      <p>Credits to <a href="https://thecybermuse.com/" class="link-primary" target="_blank">The Cyber Muse</a> for the images of this website.</p>
+	    </div>
+	</div>
+</footer>
+
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src="plugins/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
