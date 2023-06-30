@@ -1,0 +1,447 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+    "comments" : {
+      "en" : "This Ontology was developed for the project of the course Knowledge Representation and Knowledge Extraction, held by prof. Nuzzolese and prof. Gangemi at University of Bologna."
+    },
+    "other" : {
+      "chthuluConcepts" : [ {
+        "identifier" : "chthuluConcepts",
+        "language" : "undefined",
+        "value" : "Giusy Grieco",
+        "type" : "label"
+      }, {
+        "identifier" : "chthuluConcepts",
+        "language" : "undefined",
+        "value" : "Maddalena Ghiotto",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "18",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "18",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ModeConcept",
+    "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ModeConcept"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Politeness",
+      "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+      "labels" : {
+        "IRI-based" : "Politeness"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ResponseAbility",
+      "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+      "labels" : {
+        "IRI-based" : "ResponseAbility"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "ModeConcepts are ways of doing things, a particular state of mind and predisposition that is necessary for enabling an ActivityConcept or a PracticeConcept. For example, Donna Haraway defines Politeness as a virtue that makes the activity of thinking-with a generative activity, really capable of transforming the beings that participate in it. In other words, Politeness is the modality of thinking that transform \"think\" in \"think-with\"."
+    },
+    "id" : "8",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ActivityConcept",
+    "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActivityConcept"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#RenderCapable",
+      "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+      "labels" : {
+        "IRI-based" : "RenderCapable"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#PlayingSF",
+      "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+      "labels" : {
+        "IRI-based" : "PlayingSF"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#BecomingWith",
+      "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+      "labels" : {
+        "IRI-based" : "BecomingWith"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ThinkWith",
+      "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+      "labels" : {
+        "IRI-based" : "ThinkWith"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#ThinkFrom",
+      "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+      "labels" : {
+        "IRI-based" : "ThinkFrom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Storytelling",
+      "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+      "labels" : {
+        "IRI-based" : "Storytelling"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "ActivityConcepts are situated, concrete processes actuated by and through the beings -human and not-  that participate in them. They are re-inventions of common activities such as \"thinking\", \"becoming\" in the non-anthropocentric frame of the Chthulucene and they usually require equal co-participation of all entities involved."
+    },
+    "id" : "4",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Concept",
+    "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concept"
+    },
+    "subClasses" : [ "4", "9", "8" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#PracticeConcept",
+    "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PracticeConcept"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Inheritance",
+      "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+      "labels" : {
+        "IRI-based" : "Inheritance"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Worlding",
+      "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+      "labels" : {
+        "IRI-based" : "Worlding"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#GoVisit",
+      "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+      "labels" : {
+        "IRI-based" : "GoVisit"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#Ongoingness",
+      "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+      "labels" : {
+        "IRI-based" : "Ongoingness"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A PracticeConcept identifies general practices described by DonnaHaraway these practices are general conceptual frames to understand and act in a troubled word and may manifest in different situated examples. They are considered at an abstract level and explained through original evocative terms such as \"SF\", \"Worlding\", \"Ongoingness\"."
+    },
+    "id" : "9",
+    "superClasses" : [ "1" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "10",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "2",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "22",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#exampleOf",
+    "inverse" : "2",
+    "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "exampleOf"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#impliedIn",
+    "inverse" : "5",
+    "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "impliedIn"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#generates",
+    "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "generates"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#impliesActivity",
+    "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "impliesActivity"
+    },
+    "domain" : "1",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#overlapsWith",
+    "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "overlapsWith"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "symmetric" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasCondition",
+    "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasCondition"
+    },
+    "domain" : "1",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasCondition",
+    "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasCondition"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasLabel",
+    "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasLabel"
+    },
+    "domain" : "18",
+    "attributes" : [ "datatype" ],
+    "id" : "19"
+  }, {
+    "range" : "8",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasExample",
+    "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasExample"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "2"
+  }, {
+    "range" : "9",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasInstance",
+    "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasInstance"
+    },
+    "domain" : "18",
+    "attributes" : [ "datatype" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#impliesActivity",
+    "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "impliesActivity"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasMainReference",
+    "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "hasMainReference"
+    },
+    "domain" : "18",
+    "attributes" : [ "datatype" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#hasFramenetID",
+    "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasFramenetID"
+    },
+    "domain" : "18",
+    "attributes" : [ "datatype" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts#generatedBy",
+    "inverse" : "6",
+    "baseIri" : "http://www.semanticweb.org/ghiot/ontologies/2023/5/chthuluConcepts",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "generatedBy"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "25"
+  }, {
+    "range" : "1",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "26"
+  }, {
+    "range" : "1",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "1",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "28"
+  } ]
+}
