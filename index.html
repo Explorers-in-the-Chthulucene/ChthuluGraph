@@ -57,19 +57,11 @@
 			    <li class="nav-item">
 			      <a class="nav-link me-4" href="about.html">About</a>
 			    </li>
-			    <li class="nav-item">
-			      <a class="nav-link me-4" href="#events">Events</a>
-			    </li>
-			    <li class="nav-item">
-			      <a class="nav-link me-4" href="#latest-stories">Stories</a>
-			    </li>
 			    <li class="nav-item dropdown">
 			      <a class="nav-link me-4 dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Pages</a>
 			      <ul class="dropdown-menu dropdown-menu-dark">
 			        <li><a href="about.html" class="dropdown-item" href="#scrollspyHeading3">About</a></li>
 			        <li><a href="contact.html" class="dropdown-item" href="#scrollspyHeading5">Contact</a></li>
-			        <li><a href="single-post.html" class="dropdown-item" href="#scrollspyHeading5">Single</a></li>
-			        <li><a href="styles.html" class="dropdown-item" href="#scrollspyHeading5">Styles</a></li>
 			      </ul>
 			    </li>
 			    <li class="nav-item">
@@ -99,7 +91,7 @@
 				<div class="card card-dark" data-aos="fade-up" data-aos-delay="0">
 					<div class="card-body">
 						<h3>A Knowledge Representation Heuristic Method</h3>
-						<p><p>Taking inspiration from the paper "Take Five", we came across a semantic role labelling method [...]</p>
+						<p>Taking inspiration from this paper <a href="https://arxiv.org/abs/1811.01409">"Semantic Role Labeling for Knowledge Graph Extraction from Text"</a>  we studied how tools can be used, together with heuristic methods, to produce content for an ontology</p>
 						<a href="about.html">Continue reading</a>
 					</div>
 				</div>
@@ -170,7 +162,7 @@
 
 				<h4 style="color:indigo":>[WHAT] Semantic Role Labelling</h4>
 
-				<p>Taking inspiration from this paper [...] we studied how tools can be used, together with heuristic methods, to produce content for an ontology that questions the general role ontology modelling, in favour of a more concrete alignment between tools, therefore providing interoperability and leading to a F.A.I.R. use of the technology.
+				<p>Taking inspiration from this paper <a href="https://arxiv.org/abs/1811.01409">"Semantic Role Labeling for Knowledge Graph Extraction from Text"</a>  we studied how tools can be used, together with heuristic methods, to produce content for an ontology that questions the general role ontology modelling, in favour of a more concrete alignment between tools, therefore providing interoperability and leading to a F.A.I.R. use of the technology.
 					</p>
 
 			</div>
@@ -201,19 +193,149 @@
 		</div>
 </section>
 
-<section class="my-3">
+
+
+
+
+
+
+<section id="events" class="padding-large">
 	<div class="container">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<header class="text-center my-5">
+					<span class="text-muted">[HOW?]</span>
+					<h2><strong>The process</strong></h2>
+				</header>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-md-8">
+				<ol class="list-group list-group-flush" data-aos="fade-zoom-in">
+				  <li class="list-group-item d-flex justify-content-between align-items-start py-4">
+				    <div class="ms-2 me-5 text-uppercase">
+				    	<span style="color:blue">1.</span>
+				    </div>
+				    <div class="ms-2 me-auto">
+				      <div class="fw-bold" style="color:blue">Knowledge Extraction</div>
+				    </div>
+				    <a href="#" class="btn btn-primary rounded-pill">KE</a>
+				  </li>
+				  <li class="list-group-item d-flex justify-content-between align-items-start py-4">
+				    <div class="ms-2 me-5 text-uppercase">
+				    	<span style="color:blue">2.</span>
+				    </div>
+				    <div class="ms-2 me-auto">
+				      <div class="fw-bold" style="color:blue">Knowledge Graph and Ontology Evalutation</div>
+				    </div>
+				    <a href="#" class="btn btn-primary rounded-pill">KR</a>
+				  </li>
+				  <li class="list-group-item d-flex justify-content-between align-items-start py-4">
+				    <div class="ms-2 me-5 text-uppercase">
+	
+				  </li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="my-3">
+	<section class="container">
 		
 		<div class="row">
-			<div class="col">
-				<h2 class="section-title text-center mb-5" style="color:blue">¯\_(ツ)_/¯ Chthulu Database ¯\_(ツ)_/¯</h2>
-				<p>Our expected outcome to populate the Chthulu Ontology is the target identification and <b>linguistic output obtained from the chap 7 of “Stay with the Trouble”</b>. 
-				</p>
+			<div class="col-md-12">
+				<h2 style="color:blue">[KNOWLEDGE EXTRACTION]</h2>
 			</div>
 		</div>
 
-		<div class="row">
-			<div class="col">
+		<div class="row mb-3">
+			<div class="col-md-12">
+				<blockquote><p>Considering the originality of the text we are dealing with, we decided to use several automated tools along with our analogical interpretation of the text. Our aims where, on the one hand, achieving a comprehensive understanding of the content of the text on a conceptual level, on the other hand annotate the text syntactically and semantically to be able to inquire deeper in the relation between Haraway's theory and the semiotics that convey it.</p></blockquote>
+				<p style="color: grey;">
+				<h4 style="color:black">[TOPIC MODELLING]</h4>
+				<p>Along with <strong>the personal interpretation of our sources</strong> , we used <a href="https://maartengr.github.io/BERTopic/index.html">BERTopic</a> to extract meaningful topics, especially the central theoretical concepts, from the text.
+<a href="https://github.com/Explorers-in-the-Chthulucene/SemioticDrifting/blob/main/workflow.ipynb">Find here</a> the documentation of this step as well as the visualization of the book's extracted topics.</p>
+				<h4 style="color:black">[Named Entity Recognition, POS tagging, dependency and more]</h4>
+				<p>We used <a href="https://github.com/booknlp/booknlp">BookNLP</a> natural language processing pipeline that scales to books and other long documents (in English). To fully annotate the text and extract its main entities as well as their relations and dependencies.
+
+					<strong>The pipeline produces <a href="https://github.com/Explorers-in-the-Chthulucene/SemioticDrifting/tree/main/script">6 files</a>: Tokens, Entities, Supersense, Quotes (csv) and two Book files (json and html).</strong>
+					
+					Althought the entire output was useful for in-depth analysis of Staying with the trouble <strong><a href="https://github.com/Explorers-in-the-Chthulucene/SemioticDrifting/blob/main/script/FSCORE.ipynb"> </strong>it didn't seem to perform very accurately on it</a>, according to our needs, probably because of the philosophical and poetic content, in comparison to more narrative texts.
+					
+				<strong>For this reason we decided to concentrate only on one chapter, Chapter 7: A Curious Practice and manually correct the output of the tokens file. This process allowed us to precisely access the tool's accuracy and to obtain useful data for the creation of our ontology vocabulary and model. <a href="https://github.com/Explorers-in-the-Chthulucene/SemioticDrifting/blob/main/workflow.ipynb">Click here</a></strong> to read the documentation about the workflow</p>
+				<h4 style="color:black">[FRED and FrameNet]</h4>
+				<p> <a href="http://wit.istc.cnr.it/stlab-tools/fred/">FRED</a> is a machine reader for the Semantic Web: it is able to parse natural language text in 48 different languages and transform it to linked data.
+
+					<strong>Our initial aim was to exploit FRED's output to add semantic role labeling of the entities we extracted in the previous steps. Unfortunately, this task resulted too time-consuming and complex to preform in the contest of this project, that's why we decided to try and mimic fred's semantic notation through a more simple, semi-automated process that implied manually annotating identified Frames and Roles in the first paragraph of Chapter 7 and creating a Python pipeline to automatically create instances of entities and their relation, according to our designed Ontology model. </strong>
+					
+					To annotate Frames we studied FrameNet project and went through its lexical units index to see if we could classify our sentences in appropriate FrameNet frames. When suitable, we adopted FrameNet data, otherwise we created our own Frame, such as in the case of the Frame Collaborative_thinking, give that it evokes a semantic concept that is original to Donna Haraway's theory. <br>
+					
+					The identification of frames in the text was carried out following this workflow: <br>					
+						Identification of all the main concepts <br>
+						Individuation of the significant terms related to each concept and relation of concepts between them <br>
+						Abstraction into Frames evoked by the previous conceptualization <br>
+						Aligning identified Frames with FrameNet's where possible <br>
+						Listing of lexical units (concept-related identified lexical units + new FrameNet related lexical unit) <br>
+					
+					Find here all annotated Frames of our first paragraph.</p>
+
+
+
+					<div class="row">
+						<div class="col-md-12">
+							<h2 style="color:blue">[KNOWLEDGE GRAPH AND ONTOLOGY EVAUTATION]</h2>
+						</div>
+					</div>
+			
+					<div class="row mb-3">
+						<div class="col-md-12">
+							
+							<h4 style="color:black">[KNOWLEDGE GRAPH]</h4>
+							<p>Since the ontology as designed is meant to be populated automatically by means of text parsing, we designed our own algorithm to perform such task. <br>
+								The python code takes in input two datasets: <br> - <a href="https://github.com/Explorers-in-the-Chthulucene/SemioticDrifting/blob/main/script/graph_code/alignment.csv">"alignment.csv"</a>: a dataset manually written to align BookNLP output (ex. POS tagging) with our ontology Classes and indentified Frames and Roles <br> - BookNLP <a href="https://github.com/Explorers-in-the-Chthulucene/SemioticDrifting/blob/main/script/BookNLP/ch_7/ch_7.tokens">.tokens</a> file, to parse each sentence and be able to reach related synctactic and morphological information.
+								
+								<br>In addition, the two RDF of our ontologies <a href="https://github.com/Explorers-in-the-Chthulucene/SemioticDrifting/tree/main/ontologies">(ChthuluConcepts.ttl and ChthuluOnt.ttl)</a> exported from protégé are parsed and needed triples for class hierarchies and mapping are added to the main ChthuluGraph. <br>
+								
+								<strong>The libraries pandas and rdflib are used to manipulate the data and build the Knowledge </strong> <br>								
+								Here is the algorithm desing <br>
+								<img src="" alt="">
+								
+								Download the python file <br>
+								
+								Here is the visualization of the final KG:
+							
+							</p>
+							<h4 style="color:black">[Named Entity Recognition, POS tagging, dependency and more]</h4>
+							<p>We used <a href="https://github.com/booknlp/booknlp">BookNLP</a> natural language processing pipeline that scales to books and other long documents (in English). To fully annotate the text and extract its main entities as well as their relations and dependencies.
+			
+								<strong>The pipeline produces <a href="https://github.com/Explorers-in-the-Chthulucene/SemioticDrifting/tree/main/script">6 files</a>: Tokens, Entities, Supersense, Quotes (csv) and two Book files (json and html).</strong>
+								
+								Althought the entire output was useful for in-depth analysis of Staying with the trouble <strong><a href="https://github.com/Explorers-in-the-Chthulucene/SemioticDrifting/blob/main/script/FSCORE.ipynb"> </strong>it didn't seem to perform very accurately on it</a>, according to our needs, probably because of the philosophical and poetic content, in comparison to more narrative texts.
+								
+							<strong>For this reason we decided to concentrate only on one chapter, Chapter 7: A Curious Practice and manually correct the output of the tokens file. This process allowed us to precisely access the tool's accuracy and to obtain useful data for the creation of our ontology vocabulary and model. <a href="https://github.com/Explorers-in-the-Chthulucene/SemioticDrifting/blob/main/workflow.ipynb">Click here</a></strong> to read the documentation about the workflow</p>
+							<h4 style="color:black">[FRED and FrameNet]</h4>
+							<p> <a href="http://wit.istc.cnr.it/stlab-tools/fred/">FRED</a> is a machine reader for the Semantic Web: it is able to parse natural language text in 48 different languages and transform it to linked data.
+			
+								<strong>Our initial aim was to exploit FRED's output to add semantic role labeling of the entities we extracted in the previous steps. Unfortunately, this task resulted too time-consuming and complex to preform in the contest of this project, that's why we decided to try and mimic fred's semantic notation through a more simple, semi-automated process that implied manually annotating identified Frames and Roles in the first paragraph of Chapter 7 and creating a Python pipeline to automatically create instances of entities and their relation, according to our designed Ontology model. </strong>
+								
+								To annotate Frames we studied FrameNet project and went through its lexical units index to see if we could classify our sentences in appropriate FrameNet frames. When suitable, we adopted FrameNet data, otherwise we created our own Frame, such as in the case of the Frame Collaborative_thinking, give that it evokes a semantic concept that is original to Donna Haraway's theory. <br>
+								
+								The identification of frames in the text was carried out following this workflow: <br>					
+									Identification of all the main concepts <br>
+									Individuation of the significant terms related to each concept and relation of concepts between them <br>
+									Abstraction into Frames evoked by the previous conceptualization <br>
+									Aligning identified Frames with FrameNet's where possible <br>
+									Listing of lexical units (concept-related identified lexical units + new FrameNet related lexical unit) <br>
+								
+								Find here all annotated Frames of our first paragraph.</p>
+			
+			
+			
+			
+
+
 
 				<div class="accordion mb-5" id="accordionExample">
 				  <div class="accordion-item">
@@ -272,136 +394,6 @@
 	</div>
 </section>
 
-
-
-<section id="mission" class="padding-large no-padding-top">
-	<div class="container">
-		<div class="row mt-5">
-			<div class="col-md-3">
-				<div class="chart-box d-flex flex-wrap text-start" data-aos="fade-zoom-in" data-aos-delay="0">
-					<div class="chart" style="max-width: 180px;margin-bottom: 30px;">
-						<canvas id="orphans" width="180" height="180"></canvas>
-					</div>
-					<div>
-						<h3>Orphans</h3>
-						<p>An estimated 153 million children worldwide are orphans (UNICEF)</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="chart-box d-flex flex-wrap text-start" data-aos="fade-zoom-in" data-aos-delay="300">
-					<div class="chart" style="max-width: 180px;margin-bottom: 30px;">
-						<canvas id="labor" width="180" height="180"></canvas>
-					</div>
-					<div>
-						<h3>Child Labor</h3>
-						<p>Worldwide, there are 168 million child laborers, accounting for almost 11% of children (ILO)</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="chart-box d-flex flex-wrap text-start" data-aos="fade-zoom-in" data-aos-delay="600">
-					<div class="chart" style="max-width: 180px;margin-bottom: 30px;">
-						<canvas id="education" width="180" height="180"></canvas>
-					</div>
-					<div>
-						<h3>Education </h3>
-						<p>263 million children and youth let out of school (UNESCO)</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="chart-box d-flex flex-wrap text-start" data-aos="fade-zoom-in" data-aos-delay="900">
-					<div class="chart" style="max-width: 180px;margin-bottom: 30px;">
-						<canvas id="health" width="180" height="180"></canvas>
-					</div>
-					<div>
-						<h3>Health</h3>
-						<p>In 2017, 75% of malnourished children lived in less developed regions (WHO)</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section id="mission" class="bg-grey padding-large">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 offset-md-3">
-				<header class="text-center my-5">
-					<span class="text-muted">know more</span>
-					<h2><strong>About Donna Haraway Legacy</strong></h2>
-				</header>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4" data-aos="fade-zoom-in" data-aos-delay="300">
-				<h3>VOCABULARY</h3>
-				<p>Lacus vitae mauris morbi molestie vulputate lorem semper. Metus sollicitudin urna orci sapien mattis netus lacus.</p>
-				<a href="#" class="btn-link">Read more</a>
-			</div>
-			<div class="col-md-4" data-aos="fade-zoom-in" data-aos-delay="600">
-				<h3>TAXONOMY</h3>
-				<p>apien mattis netus lacus.</p>
-				<a href="#" class="btn-link">Read more</a>
-			</div>
-			<div class="col-md-4" data-aos="fade-zoom-in" data-aos-delay="900">
-				<h3>CONCEPTS</h3>
-				<p>Worlding - </p>
-				<a href="#" class="btn-link">Read more</a>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section id="events" class="padding-large">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 offset-md-3">
-				<header class="text-center my-5">
-					<span class="text-muted">[HOW?]</span>
-					<h2><strong>The process</strong></h2>
-				</header>
-			</div>
-		</div>
-		<div class="row justify-content-center">
-			<div class="col-md-8">
-				<ol class="list-group list-group-flush" data-aos="fade-zoom-in">
-				  <li class="list-group-item d-flex justify-content-between align-items-start py-4">
-				    <div class="ms-2 me-5 text-uppercase">
-				    	<span style="color:blue">1.</span>
-				    </div>
-				    <div class="ms-2 me-auto">
-				      <div class="fw-bold" style="color:blue">Knowledge Extraction</div>
-				    </div>
-				    <a href="#" class="btn btn-primary rounded-pill">KE</a>
-				  </li>
-				  <li class="list-group-item d-flex justify-content-between align-items-start py-4">
-				    <div class="ms-2 me-5 text-uppercase">
-				    	<span style="color:blue">2.</span>
-				    </div>
-				    <div class="ms-2 me-auto">
-				      <div class="fw-bold" style="color:blue">Knowledge Representation</div>
-				      <span class="text-muted">Conceptual Modelling</span>
-				    </div>
-				    <a href="#" class="btn btn-primary rounded-pill">KR</a>
-				  </li>
-				  <li class="list-group-item d-flex justify-content-between align-items-start py-4">
-				    <div class="ms-2 me-5 text-uppercase">
-				    	<span style="color:blue">3.</span>
-				    </div>
-				    <div class="ms-2 me-auto">
-				      <div class="fw-bold"  style="color:blue">Ontology Development</div>
-				      <span class="text-muted">WIDOCO Documentation</span>
-				    </div>
-				    <a href="#" class="btn btn-primary rounded-pill">Viz</a>
-				  </li>
-				</ol>
-			</div>
-		</div>
-	</div>
-</section>
 
 <section id="donate" class="cta jarallax padding-large text-white">
  	<div class="container">
